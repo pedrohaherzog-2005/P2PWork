@@ -1,5 +1,7 @@
 package p2p;
 
+import p2p.Cliente.Cliente;
+
 /**
  * Hello world!
  */
