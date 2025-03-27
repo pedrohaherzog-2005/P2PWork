@@ -1,6 +1,6 @@
 package p2p;
 
-import p2p.Cliente.Cliente;
+// import p2p.Cliente.Cliente;
 
 /**
  * Hello world!
