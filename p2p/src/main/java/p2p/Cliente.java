@@ -1,6 +1,5 @@
 package p2p;
 
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
@@ -40,7 +39,7 @@ public class Cliente {
         teclado.close();
       }
     } catch (Exception e) {
-      System.out.println("HOUVE UMA EXCESSÃO: \n" + e.getMessage());
+      System.out.println("HOUVE UMA EXCESSÃO DURANTE A EXECUÇÃO DO CLIENTE: \n" + e.getMessage());
     }
   }
 }
