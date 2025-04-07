@@ -6,8 +6,12 @@ public class Servidor extends Thread {
   ServerSocket servidor;
 
   public Servidor(int porta) throws IOException {
-    servidor = new ServerSocket(porta);
-    System.out.println("SERVIDOR RODANDO NA PORTA (" + porta + ")");
+    try {
+      servidor = new ServerSocket(porta);
+      System.out.println("SERVIDOR RODANDO NA PORTA (" + porta + ")");
+    } catch (IOException e) {
+      System.out.println("HOUVE UMA EXCESSÃO AO INICIAR O SERVIDOR: " + e.getMessage());
+    }
   }
 
   public void run() {
